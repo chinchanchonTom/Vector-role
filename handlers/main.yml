@@ -1,0 +1,6 @@
+---
+- name: Start Vector
+  ansible.builtin.shell:
+    cmd: "source $HOME/.bash_profile && vector --config {{ vector_config_path }}/vector.toml"
+    executable: /bin/bash
+    stdin: test
